@@ -18,6 +18,7 @@ const loadmovies = async() => {
 function displaymovies(movies) {
   const container = document.querySelector(".movie-wrap");
   container.innerHTML = movies.map(movie => createMovieCards(movie)).join('');
+  onClickCard();
 }
 
 // HTML list 만들기
@@ -63,9 +64,7 @@ const findTitle = function(movies) {
   
   // 버튼 클릭이나 엔터 키 입력되었을 때 실행 
   const filtermovie = movies.filter(movie => 
-    {
-      return movie.original_title.toLowerCase().includes(search)
-    });
+      movie.original_title.toLowerCase().includes(search));
 
   // console.log(filtermovie);
   displaymovies(filtermovie);
@@ -74,15 +73,13 @@ const findTitle = function(movies) {
 // 이벤트 관리
 function setEventListeners(movies) {
   const form = document.querySelector(".search");
-
-  // 카드 클릭 이벤트 
-  onClickCard();
-
   // 검색창에 입력 수행 시 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     findTitle(movies);
   })
+  // 카드 클릭 이벤트 
+  //onClickCard();
 }
 
 // main
