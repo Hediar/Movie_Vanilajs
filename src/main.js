@@ -5,7 +5,7 @@ const loadmovies = async() => {
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5NTUyMTcwNGJlYmRlZmIxZmU5YTRiMTg0MGNiYzYxNyIsInN1YiI6IjY0NzU1ZjgwYzI4MjNhMDBhOGQ0OWRhYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.eZnRu1VA2riP3i1VqNMnW4Qqilb-P_EEZjOvjcpOmvQ'
+          Authorization: // you Token
         }
       };
     const response = await fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', options);
