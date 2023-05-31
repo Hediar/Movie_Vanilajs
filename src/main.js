@@ -6,7 +6,6 @@ const loadmovies = async() => {
         headers: {
           accept: 'application/json',
           Authorization: 'authorization'
-
         }
       };
     const response = await fetch('api', options);
@@ -20,7 +19,6 @@ function displaymovies(movies) {
   const container = document.querySelector(".movie-wrap");
   container.innerHTML = movies.map(movie => createMovieCards(movie)).join('');
 }
-
 
 // HTML list 만들기
 function createMovieCards(movie){
@@ -69,7 +67,7 @@ const findTitle = function(movies) {
       return movie.original_title.toLowerCase().includes(search)
     });
 
-  console.log(filtermovie);
+  // console.log(filtermovie);
   displaymovies(filtermovie);
 }
 
