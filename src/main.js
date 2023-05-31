@@ -6,6 +6,7 @@ const loadmovies = async() => {
         headers: {
           accept: 'application/json',
           Authorization: 'authorization'
+
         }
       };
     const response = await fetch('api', options);
