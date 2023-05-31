@@ -9,6 +9,7 @@
     --color-pink: rgb(240,80,110);
     --color-light-grey: #dfdfdf;
     --color-mint: rgb(191,237,217);
+    --color-black: #3f454d;
   
     /* size */
     --base-space: 8px;
@@ -21,7 +22,7 @@
 
   body {
     height: 100vh;
-    background-color: white; 
+    background-color: rgb(23, 21, 21); 
     
   }
   .title{
@@ -37,6 +38,7 @@
     position: relative;
     left: 0;
     bottom: 0;
+    color: white;
   }
   .search{
     width: 100%;
@@ -61,7 +63,8 @@
   }
 
   .movie-card{
-    background-color: var(--color-mint);
+    background-color: rgb(102,30,45);
+    color: white;
     margin: 20px;
     padding: 20px;
     width: 300px;
