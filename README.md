@@ -1,6 +1,6 @@
 # Movie_Vanilajs
 
-> **Vanila JS Movie ** <br/> **개발기간: 2023.05.30 ~ 2023.06.01**
+> **Vanila JS Movie List** <br/> **개발기간: 2023.05.30 ~ 2023.06.01**
 
 
 
