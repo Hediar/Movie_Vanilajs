@@ -5,10 +5,10 @@ const loadmovies = async() => {
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: 'authorization'
+          Authorization: ''
         }
       };
-    const response = await fetch('api', options);
+    const response = await fetch('', options);
     const data = await response.json();
     // console.log(data['results']);
     return data['results'];
